@@ -2,6 +2,7 @@
 /languages/*
 /plugins/akismet/*
 /plugins/index.php
+/plugins/hello.php
 /themes/twentyfifteen/*
 /themes/twentyseventeen/*
 /themes/twentysixteen/*
