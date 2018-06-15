@@ -5,7 +5,7 @@
  namespace Inc\base;
 
  class Activate{
-     public function activate(){
+     public static function activate(){
          flush_rewrite_rules();
      }
  } 
