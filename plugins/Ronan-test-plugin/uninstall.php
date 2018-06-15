@@ -1,0 +1,22 @@
+<?php
+
+
+/**
+ * Plugin uninstall
+ * 
+ * 
+ *  @package RonanTestPlugin
+ */
+
+
+if (! defined('WP_UNINSTALL_PLUGIN')){
+    die;
+}
+//clear database stored data
+$books = get_posts(array( 'post_type' => 'book', 'numberposts' => -1 ))
+
+foreacth($books as $book) {
+    wp_delete_post($book->ID, true )
+}
+
+

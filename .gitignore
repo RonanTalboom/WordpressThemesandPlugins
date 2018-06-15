@@ -1,0 +1,8 @@
+#ignore
+/languages/*
+/plugins/akismet/*
+/plugins/index.php
+/themes/twentyfifteen/*
+/themes/twentyseventeen/*
+/themes/twentysixteen/*
+index.php
