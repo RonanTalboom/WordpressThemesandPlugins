@@ -5,14 +5,14 @@
  */
 
  namespace inc\base;
-
- class Enqueue {
-     public function register(){
+ use \inc\base\BaseController;
+ class Enqueue extends BaseController{
+    public function register(){
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
-     }
-    private function enqueue() {
+    }
+    public function enqueue() {
 		// enqueue all our scripts
-		wp_enqueue_style( 'mypluginstyle', PLUGIN_URL . 'assets/mystyles.css', __FILE__  );
-		wp_enqueue_script( 'mypluginscript',  PLUGIN_URL .  'assets/myscripts.js', __FILE__ );
+		wp_enqueue_style( 'mypluginstyle', $this->plugin_url . 'assets/mystyles.css' );
+		wp_enqueue_script( 'mypluginscript',  $this->plugin_url .  'assets/myscripts.js' );
 	}
  }

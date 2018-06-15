@@ -5,8 +5,8 @@
 
 
 namespace inc\pages;
-
-class Admin{
+use \inc\base\BaseController;
+class Admin extends BaseController{
 
 
     public function register() {
@@ -16,7 +16,7 @@ class Admin{
 		add_menu_page( 'Ronan Test Plugin', 'Ronan', 'manage_options', 'ronan_test_plugin', array( $this, 'admin_index' ), 'dashicons-store', 110 );
 	}
 	public function admin_index() {
-		require_once PLUGIN_PATH . 'templates/admin.php';
+		require_once $this->plugin_path . 'templates/admin.php';
 	}
 
 }

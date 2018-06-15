@@ -2,7 +2,6 @@
 /**
  * @package RonanTestPlugin
  */
-
 namespace inc;
 final class Init {
     public static function get_services(){
