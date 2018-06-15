@@ -1,0 +1,19 @@
+{
+    "name": "ronan/ronan-test-plugin",
+    "description": "plugin test",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "RonanTalboom",
+            "email": "ronantalboom@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4" : {
+            "inc\\": "./inc"
+        }
+    }
+}

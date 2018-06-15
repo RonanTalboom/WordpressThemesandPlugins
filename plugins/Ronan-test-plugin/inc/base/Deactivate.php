@@ -2,9 +2,10 @@
 /**
  * @package RonanTestPlugin
  */
+ namespace Inc\base;
 
- class RonanTestPluginActivate{
-     public static function activate(){
+ class Deactivate{
+     public static function deactivate(){
          flush_rewrite_rules();
      }
  } 
