@@ -2,7 +2,7 @@
 /**
  * @package RonanTestPlugin
  */
- namespace Inc\base;
+ namespace inc\base;
 
  class Activate{
      public static function activate(){
